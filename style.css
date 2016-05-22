@@ -1,5 +1,6 @@
 body {
 	background: #AFEEEE; 
+	font-family: 'Droid Sans', sans-serif;
 }
 
 header, main, footer {
@@ -31,25 +32,11 @@ main {
 	overflow: auto; 
 }
 
-main h2 {
+main h2, p, h3, ul {
 	float: left;
 	width: 570px; 
 }
 
-main p {
-	float: left;
-	width: 570px;
-}
-
-main h3 {
-	float: left;
-	width: 570px;
-}
-
-main ul {
-	float: left;
-	width: 570px;
-}
 
 main img {
 	float: right;
@@ -68,4 +55,8 @@ footer .contact {
 footer .sitemap {
 	float: right;
 	width: 285px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Ubuntu', sans-serif;
 }
