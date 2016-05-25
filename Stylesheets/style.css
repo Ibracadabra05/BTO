@@ -1,0 +1,132 @@
+body {
+	background: #AFEEEE; 
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 100%; 
+}
+
+header, main, footer {
+	min-width: 855px; 
+}
+
+header .container, main .container, footer .container {
+	max-width: 855px; 
+	margin: auto;
+}
+
+header {
+	background: white; 
+	overflow: auto; 
+}
+
+header h1 {
+	float: left;
+	width: 570px;
+}
+
+header nav {
+	float: right;
+	width: 285px;
+}
+
+p {
+	padding-bottom: 5px;
+}
+
+main {
+	background: white; 
+	border-top-style: solid; 
+	border-bottom-style: solid; 
+	overflow: auto; 
+}
+
+footer {
+	overflow: auto; 
+}
+
+main .left {
+  float: left;
+  width: 570px;
+}
+
+main .right {
+  float: right;
+  width: 285px;
+}
+
+footer .footer-left {
+  float: left;
+  width: 570px;
+}
+
+footer .sitemap {
+  float: right;
+  width: 285px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h5 {
+	font-size: 1.2em;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+h1 {
+	color: #778899;
+	font-size: 4em;
+	padding-bottom: 100px;
+}
+
+h2 {
+	font-size: 2em; 
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+h3 {
+	font-size: 1.5em; 
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+ul.left {
+	float: left;
+}
+
+ul.right {
+	float: right;
+}
+
+a {
+	color: cornflowerblue;
+	text-decoration: none; 
+}
+
+a:visited {
+	color: tomato;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+main.faq {
+	padding: 10px;
+}
+
+.tabs a span {
+	display: inline-block;
+	border-radius: 5px 5px 0 0;
+	width: 100px;
+	margin-right: 10px;
+	text-align: center; 
+	background: #ddd;
+	padding: 5px; 
+}
+
+.tabs a span.active {
+	background: #eee; 
+}
+
