@@ -31,14 +31,27 @@ var main = function (toDoObjects) {
 
 
 	var addCommentFromInputBox = function () {
-		var $new_toDo;
+		var $new_toDo,
+			newTags; 
 
-		if ($(".comment-input input").val() !== ""){
+		if ($(".comment-input input").val() !== "" &&
+			$(".tag-input input").val() !== ""
+			){
 				$new_toDo = $(".comment-input input").val();
 				$(".comment-input input").hide(); 
 				toDos.push($new_toDo);
 				$(".comment-input input").fadeIn(); 
 				$(".comment-input input").val(""); 
+		
+				newTags = $(".tag-input input").val().split(",");
+				$(".tag-input input").hide();
+				$(".tag-input input").fadeIn();
+				$(".tag-input input").val("");	
+
+				toDoObjects.push({"description": $new_toDo, "tags": newTags});
+
+		} else {
+			alert("Please fill in all the boxes!"); 
 		}
 	}
 
@@ -93,19 +106,25 @@ var main = function (toDoObjects) {
 				});
 
 			} else if ($element.parent().is(":nth-child(4)")) {
-				console.log("THIRD TAB CLICKED!"); 
+				console.log("FOURTH TAB CLICKED!"); 
 
 				$content = $("<section>").addClass("comment-input"); 
-				$content.append("<p>Add Your Comment:</p>");
-				$content.append("<input type="+"text"+"><button>+</button>");
+				$content.append("<p>Comment:</p>");
+				$content.append("<input type="+"text"+">");
 
 				$("main .content").append($content); 
 
-				$(".comment-input button").on("click", function(event) {
+				$content = $("<section>").addClass("tag-input");
+				$content.append("<p>Tags:</p>");
+				$content.append("<input type="+"text"+"><button>+</button>"); 
+
+				$("main .content").append($content); 
+
+				$(".tag-input button").on("click", function(event) {
 					addCommentFromInputBox();  
 				});
 
-				$(".comment-input input").on("keypress", function(event) {
+				$(".tag-input input").on("keypress", function(event) {
 					if (event.keyCode == 13) {
 						addCommentFromInputBox();  
 					}

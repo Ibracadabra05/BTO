@@ -145,3 +145,39 @@ main .content li {
     margin: 0 0 10px 0;
 }
 
+main .content button {
+  font-weight: bold;
+  padding: 0 3px 0 3px;
+  border-radius: 5px;
+  background: #ccc;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 1.3em;
+}
+
+main .content p {
+    color: red;
+    margin: 30px 0 0 0;
+}
+
+main .content p:first-child {
+    margin-top: 10px;
+}
+
+main .content input {
+    font-size: 1.5em;
+}
+
+main .content {
+    padding: 30px 10px 30px 10px;
+    border-radius: 0 5px 5px 5px;
+    background: #eee;
+}
+
+footer .contact p:nth-child(2) {
+  color: #b33;
+  font-style: italic;
+}
+
+
+
