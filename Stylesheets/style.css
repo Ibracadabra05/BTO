@@ -14,13 +14,18 @@ header .container, main .container, footer .container {
 }
 
 header {
-	background: white; 
-	overflow: auto; 
+	padding: 25px 0 25px 0;
+  	background: white;
+  	overflow: auto;
+  	border-bottom: 1px solid #ddd;
 }
 
 header h1 {
-	float: left;
-	width: 570px;
+	font-style: italic;
+  	font-size: 3em;
+  	color: #b33;
+  	float: left;
+  	width: 570px;
 }
 
 header nav {
@@ -87,8 +92,11 @@ h2 {
 
 h3 {
 	font-size: 1.5em; 
-	padding-top: 50px;
-	padding-bottom: 10px;
+	border-radius: 5px;
+    color: #999;;
+    background: #ddd;
+    padding: 5px;
+    margin: 20px 0 10px 0;
 }
 
 ul.left {
@@ -128,5 +136,12 @@ main.faq {
 
 .tabs a span.active {
 	background: #eee; 
+}
+
+main .content li {
+    border-radius: 5px;
+    padding: 3px;
+    background: #eff;
+    margin: 0 0 10px 0;
 }
 
