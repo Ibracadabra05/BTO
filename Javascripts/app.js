@@ -1,15 +1,11 @@
 
 
-var main = function () {
+var main = function (toDoObjects) {
 	"use strict";
 
-	var toDos = [
-		"Finish building this site.",
-		"Learn the rest of the MEAN stack.",
-		"Take care of remaining email.",
-		"Prep for classes to come.",
-		"Plan next stage."
-	];
+	var toDos = toDoObjects.map(function(toDo) {
+		return toDo.description; 
+	});
 
 	var addCommentFromInputBox = function () {
 		var $new_toDo;
@@ -82,4 +78,8 @@ var main = function () {
 	$(".tabs a:nth-child(1) span").trigger("click");
 }
 
-$(document).ready(main); 
+$(document).ready( function() {
+	$.getJSON("http://localhost:8000/todos.json", function(toDoObjects) {
+			main(toDoObjects);
+	});
+}); 
