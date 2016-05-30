@@ -58,7 +58,7 @@ var main = function (toDoObjects) {
 		} else {
 			alert("Please fill in all the boxes!"); 
 		}
-	}
+	};
 
 	$(".tabs span").toArray().forEach(function(element) {
 
@@ -141,7 +141,7 @@ var main = function (toDoObjects) {
 	});
 
 	$(".tabs a:nth-child(1) span").trigger("click");
-}
+}; 
 
 $(document).ready( function() {
 	$.getJSON("http://localhost:3000/todos.json", function(toDoObjects) {
