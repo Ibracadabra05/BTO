@@ -50,6 +50,11 @@ var main = function (toDoObjects) {
 
 				toDoObjects.push({"description": $new_toDo, "tags": newTags});
 
+				$.post("todos", {"description": $new_toDo, "tags": newTags}, function(response) {
+					console.log("A new comment has been 'posted' and the server has responded.");
+					console.log(response); 
+				});
+
 		} else {
 			alert("Please fill in all the boxes!"); 
 		}
