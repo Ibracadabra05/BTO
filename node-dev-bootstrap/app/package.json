@@ -1,0 +1,8 @@
+{
+	"name": "BTO",
+	"description": "Basic Task Organizer",
+	"version": "0.0.1",
+	"dependencies": {
+		"mongoose": "4.4.x"
+	}
+}
